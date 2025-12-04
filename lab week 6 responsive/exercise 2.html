@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            height: 80px;
+            justify-content: space-between;
+            padding: 0 1rem;
+            align-items: center;
+            color:white;
+            background-color: #222;
+        }
+        ul{
+            display: flex;
+            gap: 2rem;
+        }
+        li{
+            font-size: 1.5rem;
+            list-style: none;
+        }
+        p{
+            font-size: 1.5rem;
+            display: none;
+        }
+        @media only screen and (max-width:768px){
+            p{
+                display: block;
+            }
+            ul{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LOGO</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+        <p>☰</p>
+
+    </div>
+</body>
+</html>

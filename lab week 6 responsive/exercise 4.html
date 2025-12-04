@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-4</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+        }
+        .content{
+            width: clamp(300px,100%,800px);
+            height: 90%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .big{
+            padding: 1rem 0.5rem;
+            background-color: green;
+        }
+        .small{
+            display: none;
+            padding: 1rem 0.5rem;
+            background-color: red;
+        }
+        @media only screen and (max-width:550px) {
+            .small{
+                display: block;
+            }
+            .big{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <span class="small">I'm SMALL🥲</span>
+            <span class="big">I'm BIG😮 </span>
+        </div>
+    </div>
+</body>
+</html>

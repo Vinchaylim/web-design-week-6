@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    header,footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        background-color: #222;
+        color: white;
+    }
+    .wrapper{
+        display: flex;
+        margin: 0.5rem;
+        gap: 1rem;
+    }
+    main,.side-bar{
+        background-color: gainsboro;
+        padding: 1rem 0.8rem ;
+        font-weight: bold;
+    }
+    main{
+        width: 70%;
+    }
+    .side-bar{
+        width: 30%;
+        background-color: gray;
+    }
+    @media only screen and (max-width:900px) {
+        main,.side-bar{
+            width: 50%;;
+        }
+    }
+    @media only screen and (max-width:600px) {
+        main,.side-bar{
+            width: 100%;
+        }
+         .wrapper{
+            flex-wrap: wrap;
+         }
+    }
+</style>
+<body>
+    <header>Responsive Header</header>
+    <div class="wrapper">
+        <main>Main content</main>
+        <div class="side-bar">Sidebar</div>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
