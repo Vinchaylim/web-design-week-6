@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" href="style.css">
+<title>Create Account</title>
+</head>
+<body>
+  <div class="frame">
+    <div class="card">
+      <header><h1>Create Account</h1></header>
+
+      <form>
+
+        <div class="two-col">
+          <div>
+            <label class="field-label">First name *</label>
+            <input type="text" placeholder="enter your first name" />
+          </div>
+          <div>
+            <label class="field-label">Last name</label>
+            <input type="text" placeholder="enter your last name" />
+          </div>
+        </div>
+
+        <div style="margin-top:12px;">
+          <label class="field-label">Email *</label>
+          <input type="email" placeholder="enter your email" />
+        </div>
+
+        <div class="two-col" style="margin-top:12px;">
+          <div>
+            <label class="field-label">Password *</label>
+            <input type="password" placeholder="enter your password" />
+          </div>
+          <div>
+            <label class="field-label">Confirm Password *</label>
+            <input type="password" placeholder="enter your password again" />
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:12px;">
+          <div class="col">
+            <label class="field-label">Gender</label>
+            <div class="inline-group">
+              <label class="option"><input type="radio" name="gender" /> Male</label>
+              <label class="option"><input type="radio" name="gender" /> Female</label>
+            </div>
+          </div>
+
+          <div class="col">
+            <label class="field-label">Hobbies</label>
+            <div class="inline-group">
+              <label class="option"><input type="checkbox" /> Music</label>
+              <label class="option"><input type="checkbox" /> Sports</label>
+              <label class="option"><input type="checkbox" /> Travel</label>
+              <label class="option"><input type="checkbox" /> Movies</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label class="field-label">Source of Income</label>
+            <select>
+              <option>Employed</option>
+              <option>Self-employed</option>
+              <option>Student</option>
+              <option>Unemployed</option>
+            </select>
+          </div>
+          <div class="col">
+            <label class="field-label">Income</label>
+            <div class="slider-row">
+              <input type="range" min="0" max="100" id="incomeRange" />
+              <div class="badge" id="incomeBadge">40K</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label class="field-label">Upload Profile Picture</label>
+            <div class="file-row box">
+              <input type="file" />
+            </div>
+          </div>
+          <div style="width:120px;">
+            <label class="field-label">Age</label>
+            <input type="number" value="18" />
+          </div>
+        </div>
+
+        <div style="margin-top:12px;">
+          <label class="field-label">Bio</label>
+          <textarea placeholder=""></textarea>
+        </div>
+      </form>
+
+      <div class="footer">
+        <button class="create">Create</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
